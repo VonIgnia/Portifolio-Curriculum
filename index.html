@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<html>
+	<head>
+		<!--Dentro do Head ficam os metadados(dados sobre os dados)-->
+		<title>Giovanni Rozatti</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  		<link href="https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap" rel="stylesheet">
+  		<link href="https://fonts.google.com/specimen/Montserrat" rel="stylesheet">
+		<meta charset="utf-8"> <!-- Impede de ferrar com a acentuação -->
+	</head>
+
+	<body>
+		<header>
+			<img class="logo" src="assets/img/MiniLogoScale2.svg"> 
+			<nav><!--Inserir links aqui dentro de listas não ordenadas-->
+				<ul class="nav_links">
+					<li><a href="https://www.linkedin.com/in/giovanni-rozatti/">LinkedIn</li>
+					<li><a href="https://github.com/VonIgnia">GitHub</li>
+
+					<li><a href="#">Currículo</a></li>
+					<li><a href="#">Projetos</a></li>
+
+				</ul>
+			</nav>
+		</header>
+
+		<!--Carrosel de imagens-->
+		<div class="carousel">
+			<button class="carousel_button carousel_button--left"><</button>
+			<div class="carousel_track_container">
+				<ul class="carousel_track">
+					<li class="slide current-slide">
+						<img class="carousel_images" src="assets/img/Logo LinkedIn.png" alt="">		
+					</li>
+					<li class="slide">
+						<img class="carousel_images" src="assets/img/Space.jfif" alt="">
+					</li>
+					<li class="slide">
+						<img class="carousel_images" src="assets/img/Logo GitHub.png" alt="">
+					</li>
+					<li class="slide">
+						<img class="carousel_images" src="assets/img/Delorean.png" alt="">
+					</li>
+				</ul>
+			</div>
+			<button class="carousel_button carousel_button--right">></button>
+			<div class="carousel_nav">
+				<button class="carousel_slide_counter current-slide"></button>
+				<button class="carousel_slide_counter"></button>
+				<button class="carousel_slide_counter"></button>
+				<button class="carousel_slide_counter"></button>
+			</div>
+		</div>
+
+	<script type="text/javascript" src="assets/js/carousel.js"></script>
+
+	</body>

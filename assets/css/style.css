@@ -1,0 +1,161 @@
+* {
+	box-sizing: border-box;
+	background-color: #14151A;
+}
+
+.container{
+	display: flex;
+	color: #A9A9C9;
+	background-repeat: no-repeat;
+	padding:30px 20px;
+	font-size: 80px;
+}
+
+
+li, a{
+	font-family: "Lato", sans-serif;
+	font-style: italic;
+	font-weight: 200;
+	font-size:18px;
+	color: #EDF0FF;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 10%;
+	border-style: solid;
+	border-width: 0px 0px 2.5px 0px;
+	border-color: #999999
+}
+
+header,li,a,ul,.logo,.nav-links{
+	background-color: #222244
+}
+
+.logo{
+	cursor: pointer;
+	padding: 0px 0%;
+}
+
+.nav_links{
+	list-style: none;
+}
+
+.nav_links li{
+	display: inline-block;
+	margin: 0px;
+	padding: 0px 20px;
+}
+
+.nav_links li a {
+	transition: all 0.6s ease 0s;
+}
+.nav_links li a:hover {
+	color: #FD6A02;
+}
+
+
+/*----------------------Carousel----------------------*/
+
+
+.carousel{
+	position: relative;
+	height:25rem;
+	width: 62.5%;
+	margin: 7.5% auto;
+}
+
+.carousel_images{
+	width:100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.carousel_track_container{
+	background-color: #FD6A02;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.carousel_track{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	height:100%;
+	transition: transform 0.6s ease-in;
+}
+
+.slide{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+
+}
+
+.carousel_button{
+	position: absolute;
+	height: 50%;
+	width: 25px;
+	top:25%;
+	transform: translate(0%);
+	margin:0px;
+	cursor: pointer;
+	border: none;
+
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-size:40px;
+	background-color:#14151A;
+	color:#EDF0FF;
+	text-decoration: none; 
+
+	margin: auto 0;
+}
+
+.carousel_button--left{
+	left: -25px;
+	margin: 0 0 0 -25px;
+}
+
+.carousel_button--right{
+	right: -25px;
+	margin: 0 -25px 0 0;
+}
+
+.carousel_button{
+	transition: all 0.7s ease;
+}
+
+.carousel_button:hover {
+	background-color: #EDF0FF10;
+	color: #FD6A02;
+}
+
+.carousel_nav{
+	display: flex;
+	justify-content: center;
+	margin: 5px;
+	padding: 5px 0;
+}
+
+.carousel_slide_counter{
+	border: 0;
+	border-radius:50%;
+	width: 15px;
+	height: 15px;
+	background-color: lightgray;
+	margin: 1% 10px;
+
+	cursor: pointer;
+	transition: all 0.6s ease-in 0s;
+}
+
+.current-slide{
+	background-color:#FD6A02;
+}
